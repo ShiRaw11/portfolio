@@ -8,7 +8,7 @@ import {
 export default function Navbar() {
   return (
     <NavigationMenu>
-      <NavigationMenuList className=" w-[500px] md:w-[70vw] flex items-center  text-white h-[90px] px-10 rounded-lg">
+      <NavigationMenuList className=" w-[500px] md:w-[70vw] flex items-center  text-white h-[90px] px-10 rounded-lg border border-teal">
         <div className=" flex space-x-4  w-full justify-between items-center h-full">
           <NavigationMenuItem>
             <NavigationMenuLink href="#home" className="hover:text-teal ">
@@ -31,11 +31,11 @@ export default function Navbar() {
             </NavigationMenuLink>
           </NavigationMenuItem>
           <NavigationMenuItem>
-            <div className="h-[50px] hover:bg-white flex justify-center items-center w-[170px] rounded-lg bg-popover">
+            <div className="h-[50px] hover:bg-white flex justify-center items-center w-[170px] rounded-lg bg-light hover:text-teal">
               <NavigationMenuLink
                 href="../assets/cv.pdf"
                 download="Edith-Resume"
-                className="hover:text-teal"
+                
               >
                 Download Resume
               </NavigationMenuLink>

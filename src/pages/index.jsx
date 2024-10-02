@@ -15,7 +15,7 @@ export function AboutMe() {
   return (
     <div
       id="about"
-      className=" bg-gradient-to-r from-violet-500 to-fuchsia-500 "
+      className="bg-popover h-screen text-white "
     >
       <div className="flex justify-center">
         <Navbar />
@@ -54,12 +54,12 @@ export function AboutMe() {
 
 export const Skills = () => {
   return (
-    <div className=" bg-popover" id="skills">
-      <h2 className=" mt-5 p-5 text-5xl text-white font-bold flex justify-center font-lilita">
+    <div className=" bg-popover " id="skills">
+      <h2 className="  text-5xl text-white font-bold flex justify-center font-lilita">
         Skills
       </h2>
 
-      <div className=" p-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className=" p-5 mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card className="transition-transform transform hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-blue-500">
           <CardHeader>
             <CardTitle>Frontend Development</CardTitle>
@@ -192,7 +192,7 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <div className="mt-5 " id="projects">
+    <div className=" mt-5 " id="projects">
       <h2 className="text-5xl font-bold text-center mb-12 font-lilita">
         Projects
       </h2>
@@ -203,9 +203,9 @@ export const ProjectsSection = () => {
             key={index}
             className={`relative flex flex-row ${
               index % 2 === 0 ? "flex-row-reverse" : ""
-            } items-center bg-popover rounded-xl overflow-hidden shadow-lg h-[300px] md:h-[400px]`}
+            } items-center bg-popover rounded-lg overflow-hidden shadow-lg h-[300px] md:h-[400px]`}
           >
-            <div className="w-full h-full md:w-2/3  my-4 md:h-auto transition-transform transform hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-blue-500">
+            <div className=" h-full md:w-2/3 w-1/2  transition-transform transform hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-teal">
               <img
                 src={project.image}
                 alt={project.name}
@@ -214,16 +214,8 @@ export const ProjectsSection = () => {
             </div>
 
             <div
-              className={` h-full relative w-[70vw] md:w-1/3 p-4 sm:p-6 md:p-10 bg-white  shadow-inner flex flex-col justify-center items-center`}
-              style={{
-                left: index % 2 === 0 ? "10px" : "auto",
-                right: index % 2 === 1 ? "10px" : "auto",
-                top: "10px",
-                borderTopLeftRadius: index % 2 === 0 ? "100px" : "0",
-                borderBottomLeftRadius: index % 2 === 0 ? "100px" : "0",
-                borderTopRightRadius: index % 2 === 1 ? "100px" : "0",
-                borderBottomRightRadius: index % 2 === 1 ? "100px" : "0",
-              }}
+              className={` h-full relative w-1/2 md:w-1/3 p-4 sm:p-6 md:p-10 bg-white shadow-inner flex flex-col justify-center items-center`}
+
             >
               <h3 className="text-popover text-xl sm:text-2xl font-bold mb-3">
                 {project.name}
@@ -318,11 +310,10 @@ function LandingPage() {
   return (
     <>
       <div
-        className="bg-cover bg-right bg-no-repeat h-screen"
-        style={{ backgroundImage: `url(${image})` }}
+        className="h-screen bg-popover flex flex-col justify-center items-center"
         id="home"
       >
-        <div className="text-content absolute top-1/4 left-10 text-white  w-[450px] flex flex-col  items-center">
+        <div className=" text-white ">
           <h1 className="text-8xl">Hello 👋,</h1>
           <h2 className="text-5xl mt-5 text-light font-lilita">
             I am Edith Kimani,
