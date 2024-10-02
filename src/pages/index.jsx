@@ -203,9 +203,9 @@ export const ProjectsSection = () => {
             key={index}
             className={`relative flex flex-row ${
               index % 2 === 0 ? "flex-row-reverse" : ""
-            } items-center bg-popover rounded-xl overflow-hidden shadow-lg h-[400px]`}
+            } items-center bg-popover rounded-xl overflow-hidden shadow-lg h-[300px] md:h-[400px]`}
           >
-            <div className="w-full h-full md:w-2/3 w-[50vw] md:h-auto transition-transform transform hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-blue-500">
+            <div className="w-full h-full md:w-2/3  md:h-auto transition-transform transform hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-blue-500">
               <img
                 src={project.image}
                 alt={project.name}
@@ -214,7 +214,7 @@ export const ProjectsSection = () => {
             </div>
 
             <div
-              className={` h-full relative w-1/2 md:w-1/3 p-4 sm:p-6 md:p-10 bg-white  shadow-inner flex flex-col justify-center items-center`}
+              className={` h-full relative w-[70vw] md:w-1/3 p-4 sm:p-6 md:p-10 bg-white  shadow-inner flex flex-col justify-center items-center`}
               style={{
                 left: index % 2 === 0 ? "10px" : "auto",
                 right: index % 2 === 1 ? "10px" : "auto",
@@ -246,10 +246,10 @@ export const ProjectsSection = () => {
                 </div>
               </div>
 
-              <div className="space-x-4 mt-4">
+              <div className="pl-5 space-x-4 mt-4">
                 <a
                   href={project.projectLink}
-                  className="font-semibold text-popover hover:underline"
+                  className="text-[12px] md:text-[18px] md:font-semibold text-popover hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -257,7 +257,7 @@ export const ProjectsSection = () => {
                 </a>
                 <a
                   href={project.githubLink}
-                  className="font-semibold text-popover hover:underline"
+                  className="text-[12px] md:text-[18px] md:font-semibold text-popover hover:underline"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
