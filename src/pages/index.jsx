@@ -15,7 +15,7 @@ export function AboutMe() {
   return (
     <div
       id="about"
-      className="bg-popover h-screen text-white "
+      className="bg-popover pb-20 text-white "
     >
       <div className="flex justify-center">
         <Navbar />
@@ -24,7 +24,7 @@ export function AboutMe() {
         About me
       </h2>
 
-      <div className="h-screen mx-auto flex flex-col items-center ">
+      <div className="mx-auto flex flex-col items-center ">
         <div>
           <CustomSVG />
         </div>
