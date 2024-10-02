@@ -24,13 +24,13 @@ export function AboutMe() {
         About me
       </h2>
 
-      <div className="h-screen w-[500px] mx-auto flex flex-col items-center ">
+      <div className="h-screen mx-auto flex flex-col items-center ">
         <div>
           <CustomSVG />
         </div>
 
         <div>
-          <p className=" text-lg mt-6 px-5">
+          <p className=" text-[14px] md:text-lg mt-6 px-5 md:w-[500px]">
             I am a highly dedicated software engineer with a strong passion for
             frontend development, complemented by extensive experience in
             backend technologies. I find great satisfaction in solving complex
