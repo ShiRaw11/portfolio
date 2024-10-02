@@ -159,7 +159,7 @@ export const Skills = () => {
 const projects = [
   {
     name: "MyDiary",
-    description: "This is a simple notes website.",
+    description: "This is a simple notes website, where users can add, edit or delete entries",
     technologies: ["Next.js", "Tailwind CSS", "Supabase"],
     image: project1,
     projectLink: "https://shii-diary.vercel.app/",
@@ -167,7 +167,7 @@ const projects = [
   },
   {
     name: "Simple Todo App",
-    description: "A simple to do app",
+    description: "This is a todo app created using react and css.",
     technologies: ["react.js", "css"],
     image: project2,
     projectLink: "https://shii-todo-shiis-projects.vercel.app/",
@@ -175,7 +175,7 @@ const projects = [
   },
   {
     name: "MovieBox",
-    description: "A simple website for displaying movies",
+    description: "This is a website for displaying popular movies from TMDB API",
     technologies: ["react.js", "css"],
     image: project3,
     projectLink: "https://shiraw11.github.io/MovieBox11/",
@@ -183,7 +183,7 @@ const projects = [
   },
   {
     name: "Sudoku app",
-    description: "This is a simple sudoku app",
+    description: "A simple sudoku app",
     technologies: ["react native", "tailwindcss"],
     image: project4,
     githubLink: "https://github.com/ShiRaw11/Simple_sudoku",
@@ -192,12 +192,12 @@ const projects = [
 
 export const ProjectsSection = () => {
   return (
-    <div className="mt-5" id="projects">
+    <div className="mt-5 " id="projects">
       <h2 className="text-5xl font-bold text-center mb-12 font-lilita">
         Projects
       </h2>
 
-      <div className="space-y-12 bg-white">
+      <div className="space-y-12 bg-white ">
         {projects.map((project, index) => (
           <div
             key={index}
@@ -205,7 +205,7 @@ export const ProjectsSection = () => {
               index % 2 === 0 ? "flex-row-reverse" : ""
             } items-center bg-popover rounded-xl overflow-hidden shadow-lg h-[300px] md:h-[400px]`}
           >
-            <div className="w-full h-full md:w-2/3  md:h-auto transition-transform transform hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-blue-500">
+            <div className="w-full h-full md:w-2/3  my-4 md:h-auto transition-transform transform hover:scale-105 hover:shadow-lg hover:ring-2 hover:ring-blue-500">
               <img
                 src={project.image}
                 alt={project.name}
